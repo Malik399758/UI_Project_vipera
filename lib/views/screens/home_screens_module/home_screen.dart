@@ -42,9 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             SizedBox(height: 20.h,),
-        
+
             // coins contain
-            
+
             Row(
               children: [
                 Container(
@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 SizedBox(width: 15,),
-        
+
                 Container(
                   width:150,
                   height: 60,
@@ -154,11 +154,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-        
+
               ],
             ),
             SizedBox(height: 20.h,),
-        
+
             // Scroll text
             Row(
               children: [
@@ -188,917 +188,2673 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Divider(color: Color(0xff4CC0F8),thickness: 0.3,),
             SizedBox(height: 15.h),
-            
+
             // categories
-            Column(
-              children: [
-                Row(
-                  children: [
-                    Text('Model\nCoin',style: GoogleFonts.poppins(
-                      fontSize: 10,fontWeight: FontWeight.w400,
-                      color: Color(0xff9FA2AA)
-                    ),),
-                    SizedBox(width: 79.w,),
-                    Text('HashRate\nPower',style: GoogleFonts.poppins(
-                    fontSize: 10,fontWeight: FontWeight.w400,
-                    color: Color(0xff9FA2AA)
-                ),),
-                    SizedBox(width: 23.w,),
-                    Text('Price\nROI',style: GoogleFonts.poppins(
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text('Model\nCoin',style: GoogleFonts.poppins(
                         fontSize: 10,fontWeight: FontWeight.w400,
                         color: Color(0xff9FA2AA)
-                    ),),
-                    SizedBox(width: 75.w,),
-                    Row(
-                      children: [
-                        Text('Profit',style: GoogleFonts.poppins(
-                            fontSize: 10,fontWeight: FontWeight.w400,
-                            color: Color(0xff9FA2AA)
-                        ),),
-                        Icon(CupertinoIcons.chevron_up_chevron_down,color: Color(0xff9FA2AA),
-                        size: 10,)
-                       // Icon(arrow)
-                      ],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 12.h,),
-            
-                // 1 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              width: 30.w,
-                              height: 30.h,
-                              decoration: BoxDecoration(
-                                  color: Colors.black87,
-                                  shape: BoxShape.circle
-                              ),
-                              child:ClipRRect(
-                                  borderRadius: BorderRadius.circular(23),
-                                  child: Image.asset('assets/images/G.png',)),
-                            ),
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xffFF3D00),
-                              ),
-                              child: Center(
-                                child: Text('1',style: GoogleFonts.poppins(
-                                  fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                          children: [
-                            TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w600,
-                              color: Color(0xff0F172A)
-                            )),
-                            TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
+                      ),),
+                      SizedBox(width: 79.w,),
+                      Text('HashRate\nPower',style: GoogleFonts.poppins(
+                      fontSize: 10,fontWeight: FontWeight.w400,
+                      color: Color(0xff9FA2AA)
+                  ),),
+                      SizedBox(width: 23.w,),
+                      Text('Price\nROI',style: GoogleFonts.poppins(
+                          fontSize: 10,fontWeight: FontWeight.w400,
+                          color: Color(0xff9FA2AA)
+                      ),),
+                      SizedBox(width: 75.w,),
+                      Row(
+                        children: [
+                          Text('Profit',style: GoogleFonts.poppins(
+                              fontSize: 10,fontWeight: FontWeight.w400,
                               color: Color(0xff9FA2AA)
-                            ))
-                          ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                      children: [
-                        TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                          fontSize: 10.sp,fontWeight: FontWeight.w400,
-                          color: Color(0xff0F172A)
-                        )),
-                        TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400,
-                            color: Color(0xff9FA2AA)
-                        )),
-                        TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                          ),),
+                          Icon(CupertinoIcons.chevron_up_chevron_down,color: Color(0xff9FA2AA),
+                          size: 10,)
+                         // Icon(arrow)
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 12.h,),
+
+                  // 1 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/G.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xffFF3D00),
+                                ),
+                                child: Center(
+                                  child: Text('1',style: GoogleFonts.poppins(
+                                    fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                            children: [
+                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                color: Color(0xff0F172A)
+                              )),
+                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                              ))
+                            ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                        children: [
+                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
                             fontSize: 10.sp,fontWeight: FontWeight.w400,
                             color: Color(0xff0F172A)
-                        )),
-                        TextSpan(text: 'W',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400,
-                            color: Color(0xff9FA2AA)
-                        ))
-                      ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
                           )),
                           TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
                               fontSize: 10.sp,fontWeight: FontWeight.w400,
                               color: Color(0xff9FA2AA)
                           )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
                               fontSize: 10.sp,fontWeight: FontWeight.w400,
                               color: Color(0xff0F172A)
                           )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                          TextSpan(text: 'W',style: GoogleFonts.poppins(
                               fontSize: 10.sp,fontWeight: FontWeight.w400,
                               color: Color(0xff9FA2AA)
                           ))
                         ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: [
-                          Color(0xffFFFFFF),
-                          Color(0xff39FE28),
-                        ])
-                      ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                          fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
-            
-                // 2 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
+                      )),
+                      RichText(text: TextSpan(
                           children: [
-                            Container(
-                              width: 30,
-                              height: 30,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.black87, // Optional background color
-                                image: DecorationImage(
-                                  image: AssetImage('assets/images/ir.png'),
-                                  fit: BoxFit.cover,
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(colors: [
+                            Color(0xffFFFFFF),
+                            Color(0xff39FE28),
+                          ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                            fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 2 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.black87, // Optional background color
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/images/ir.png'),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
-                            ),
 
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff22C55E),
-                              ),
-                              child: Center(
-                                child: Text('2',style: GoogleFonts.poppins(
-                                    fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                            children: [
-                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w600,
-                                  color: Color(0xff0F172A)
-                              )),
-                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w400,
-                                  color: Color(0xff9FA2AA)
-                              ))
-                            ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'W',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff22C55E),
+                                ),
+                                child: Center(
+                                  child: Text('2',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
                           ))
-                        ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            Color(0xffFFFFFF),
-                            Color(0xff39FE28),
-                          ])
+                        ],
                       ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
-            
-                // 3 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
+                      RichText(text: TextSpan(
                           children: [
-                            Container(
-                              width: 30.w,
-                              height: 30.h,
-                              decoration: BoxDecoration(
-                                  color: Colors.black87,
-                                  shape: BoxShape.circle
-                              ),
-                              child:ClipRRect(
-                                  borderRadius: BorderRadius.circular(23),
-                                  child: Image.asset('assets/images/G.png',)),
-                            ),
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff22C55E),
-                              ),
-                              child: Center(
-                                child: Text('3',style: GoogleFonts.poppins(
-                                    fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                            children: [
-                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w600,
-                                  color: Color(0xff0F172A)
-                              )),
-                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w400,
-                                  color: Color(0xff9FA2AA)
-                              ))
-                            ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'W',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            Color(0xffFFFFFF),
-                            Color(0xff39FE28),
-                          ])
-                      ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
-            
-                // 4 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
                           children: [
-                            Container(
-                              width: 30.w,
-                              height: 30.h,
-                              decoration: BoxDecoration(
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xff39FE28),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 3 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/G.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff22C55E),
+                                ),
+                                child: Center(
+                                  child: Text('3',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xff39FE28),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 4 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    // color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img1.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('4',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xff39FE28),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 5 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('5',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xff39FE28),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 6 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img3.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('6',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xff39FE28),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 7 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('7',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xff39FE28),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 8 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('8',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xff39FE28),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  //---------Orange Color apply --------------------------
+                  // 1 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/G.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xffFF3D00),
+                                ),
+                                child: Center(
+                                  child: Text('1',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 2 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.black87, // Optional background color
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/images/ir.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff22C55E),
+                                ),
+                                child: Center(
+                                  child: Text('2',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 3 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/G.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff22C55E),
+                                ),
+                                child: Center(
+                                  child: Text('3',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 4 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
                                   // color: Colors.black87,
-                                  shape: BoxShape.circle
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img1.png',)),
                               ),
-                              child:ClipRRect(
-                                  borderRadius: BorderRadius.circular(23),
-                                  child: Image.asset('assets/images/img1.png',)),
-                            ),
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff9FA2AA),
-                              ),
-                              child: Center(
-                                child: Text('4',style: GoogleFonts.poppins(
-                                    fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                            children: [
-                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w600,
-                                  color: Color(0xff0F172A)
-                              )),
-                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w400,
-                                  color: Color(0xff9FA2AA)
-                              ))
-                            ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'W',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('4',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
                           ))
-                        ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            Color(0xffFFFFFF),
-                            Color(0xff39FE28),
-                          ])
+                        ],
                       ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
-            
-                // 5 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
+                      RichText(text: TextSpan(
                           children: [
-                            Container(
-                              width: 30.w,
-                              height: 30.h,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  shape: BoxShape.circle
-                              ),
-                              child:ClipRRect(
-                                  borderRadius: BorderRadius.circular(23),
-                                  child: Image.asset('assets/images/img2.png',)),
-                            ),
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff9FA2AA),
-                              ),
-                              child: Center(
-                                child: Text('5',style: GoogleFonts.poppins(
-                                    fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                            children: [
-                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w600,
-                                  color: Color(0xff0F172A)
-                              )),
-                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w400,
-                                  color: Color(0xff9FA2AA)
-                              ))
-                            ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'W',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            Color(0xffFFFFFF),
-                            Color(0xff39FE28),
-                          ])
-                      ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
-            
-                // 6 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
                           children: [
-                            Container(
-                              width: 30.w,
-                              height: 30.h,
-                              decoration: BoxDecoration(
-                                  color: Colors.black87,
-                                  shape: BoxShape.circle
-                              ),
-                              child:ClipRRect(
-                                  borderRadius: BorderRadius.circular(23),
-                                  child: Image.asset('assets/images/img3.png',)),
-                            ),
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff9FA2AA),
-                              ),
-                              child: Center(
-                                child: Text('6',style: GoogleFonts.poppins(
-                                    fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
                         ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                            children: [
-                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w600,
-                                  color: Color(0xff0F172A)
-                              )),
-                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w400,
-                                  color: Color(0xff9FA2AA)
-                              ))
-                            ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'W',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            Color(0xffFFFFFF),
-                            Color(0xff39FE28),
-                          ])
-                      ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
-            
-                // 7 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              width: 30.w,
-                              height: 30.h,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  shape: BoxShape.circle
-                              ),
-                              child:ClipRRect(
-                                  borderRadius: BorderRadius.circular(23),
-                                  child: Image.asset('assets/images/img2.png',)),
-                            ),
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff9FA2AA),
-                              ),
-                              child: Center(
-                                child: Text('7',style: GoogleFonts.poppins(
-                                    fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                            children: [
-                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w600,
-                                  color: Color(0xff0F172A)
-                              )),
-                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w400,
-                                  color: Color(0xff9FA2AA)
-                              ))
-                            ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'W',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            Color(0xffFFFFFF),
-                            Color(0xff39FE28),
-                          ])
-                      ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
-            
-                // 8 category
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              width: 30.w,
-                              height: 30.h,
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  shape: BoxShape.circle
-                              ),
-                              child:ClipRRect(
-                                  borderRadius: BorderRadius.circular(23),
-                                  child: Image.asset('assets/images/img2.png',)),
-                            ),
-                            Container(
-                              width: 12.w,
-                              height: 12.h,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff9FA2AA),
-                              ),
-                              child: Center(
-                                child: Text('8',style: GoogleFonts.poppins(
-                                    fontSize: 8.sp,fontWeight: FontWeight.w500
-                                ),),
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 6.w,),
-                        RichText(text: TextSpan(
-                            children: [
-                              TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w600,
-                                  color: Color(0xff0F172A)
-                              )),
-                              TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
-                                  fontSize: 10.sp,fontWeight: FontWeight.w400,
-                                  color: Color(0xff9FA2AA)
-                              ))
-                            ]
-                        ))
-                      ],
-                    ),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '360 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '3300 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'W',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    RichText(text: TextSpan(
-                        children: [
-                          TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          )),
-                          TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff0F172A)
-                          )),
-                          TextSpan(text: 'Mon',style: GoogleFonts.poppins(
-                              fontSize: 10.sp,fontWeight: FontWeight.w400,
-                              color: Color(0xff9FA2AA)
-                          ))
-                        ]
-                    )),
-                    Container(
-                      width: 52.w,
-                      height: 24.h,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
-                            Color(0xffFFFFFF),
-                            Color(0xff39FE28),
-                          ])
-                      ),
-                      child: Center(
-                        child: Text('4.93%',style: GoogleFonts.poppins(
-                            fontSize: 10.sp,fontWeight: FontWeight.w400
-            
-                        ),),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 17.h,),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
 
-              ],
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 5 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('5',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 6 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img3.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('6',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 7 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('7',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 8 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('8',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFFC107),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // -------- red color apply-------
+
+                  // 1 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/G.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xffFF3D00),
+                                ),
+                                child: Center(
+                                  child: Text('1',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 2 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30,
+                                height: 30,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.black87, // Optional background color
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/images/ir.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff22C55E),
+                                ),
+                                child: Center(
+                                  child: Text('2',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 3 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/G.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff22C55E),
+                                ),
+                                child: Center(
+                                  child: Text('3',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 4 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img1.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('4',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 5 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('5',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 6 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.black87,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img3.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('6',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 7 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('7',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+                  // 8 category
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                width: 30.w,
+                                height: 30.h,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                ),
+                                child:ClipRRect(
+                                    borderRadius: BorderRadius.circular(23),
+                                    child: Image.asset('assets/images/img2.png',)),
+                              ),
+                              Container(
+                                width: 12.w,
+                                height: 12.h,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color(0xff9FA2AA),
+                                ),
+                                child: Center(
+                                  child: Text('8',style: GoogleFonts.poppins(
+                                      fontSize: 8.sp,fontWeight: FontWeight.w500
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(width: 6.w,),
+                          RichText(text: TextSpan(
+                              children: [
+                                TextSpan(text: 'AE1 LITE\n',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w600,
+                                    color: Color(0xff0F172A)
+                                )),
+                                TextSpan(text: 'ALEO',style: GoogleFonts.poppins(
+                                    fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                    color: Color(0xff9FA2AA)
+                                ))
+                              ]
+                          ))
+                        ],
+                      ),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '360 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '3300 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'W',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      RichText(text: TextSpan(
+                          children: [
+                            TextSpan(text: '\$3,599.00 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mh\n',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            )),
+                            TextSpan(text: '2.5 ',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff0F172A)
+                            )),
+                            TextSpan(text: 'Mon',style: GoogleFonts.poppins(
+                                fontSize: 10.sp,fontWeight: FontWeight.w400,
+                                color: Color(0xff9FA2AA)
+                            ))
+                          ]
+                      )),
+                      Container(
+                        width: 52.w,
+                        height: 24.h,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              Color(0xffFFFFFF),
+                              Color(0xffFF3D00),
+                            ])
+                        ),
+                        child: Center(
+                          child: Text('4.93%',style: GoogleFonts.poppins(
+                              fontSize: 10.sp,fontWeight: FontWeight.w400
+
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 17.h,),
+
+
+
+
+                ],
+              ),
             )
           ],
         ),

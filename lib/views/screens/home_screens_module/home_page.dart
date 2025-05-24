@@ -26,11 +26,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          pages[_selectedItem]
-        ],
-      ),
+      body: pages[_selectedItem],
       
 
       bottomNavigationBar: BottomNavigationBar(
