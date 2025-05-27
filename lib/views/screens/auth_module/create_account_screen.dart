@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_project/views/screens/auth_module/login_screen.dart';
 
 class CreateAccountScreen extends StatefulWidget {
   const CreateAccountScreen({super.key});
@@ -314,17 +315,24 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
           
               // already account
               Center(
-                child: RichText(text: TextSpan(
-                    children: [
-                      TextSpan(text: 'Already have account?',style: GoogleFonts.poppins(
-                          fontSize: 14,fontWeight: FontWeight.w500,color: Color(0xff6F747F),
-                          letterSpacing: -0.2
-                      ),),
-                      TextSpan(text: ' Login.',style: GoogleFonts.poppins(
-                          color: Color(0xff4CC0F8),fontSize: 14,fontWeight: FontWeight.w500
-                      ))
-                    ]
-                )),
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(
+                        builder: (context) => LoginScreen()));
+                  },
+
+                  child: RichText(text: TextSpan(
+                      children: [
+                        TextSpan(text: 'Already have account?',style: GoogleFonts.poppins(
+                            fontSize: 14,fontWeight: FontWeight.w500,color: Color(0xff6F747F),
+                            letterSpacing: -0.2
+                        ),),
+                        TextSpan(text: ' Login.',style: GoogleFonts.poppins(
+                            color: Color(0xff4CC0F8),fontSize: 14,fontWeight: FontWeight.w500
+                        ))
+                      ]
+                  )),
+                ),
               ),
               SizedBox(height: 30,),
 

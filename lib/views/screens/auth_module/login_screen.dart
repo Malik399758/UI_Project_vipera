@@ -1,6 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_project/views/screens/auth_module/create_account_screen.dart';
+import 'package:ui_project/views/screens/home_screens_module/home_page.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,6 +14,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  bool isLoading = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 padding: const EdgeInsets.only(top: 64),
                 child: Image.asset('assets/images/logo_ui_project.png',width: 150,height: 40,),
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: 15.h,),
               Text('Welcome Back ',style: GoogleFonts.poppins(
                 fontSize: 34,
                 fontWeight: FontWeight.w700,
@@ -38,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Rect.fromLTWH(0.0, 0.0, 300.0, 70.0),
                   ),
               ),),
-              SizedBox(height: 20,),
+              SizedBox(height: 20.h,),
           
               // container for email
           
@@ -74,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 20.h,),
           
               // container for password
               Container(
@@ -110,54 +115,77 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 10.h,),
               //forgot password
               Align(
                 alignment: Alignment.topRight,
                 child: Text('Forget Password',style: GoogleFonts.poppins(
-                  fontSize: 12,fontWeight: FontWeight.w400,decoration: TextDecoration.underline,decorationColor: Color(0xff018CCB),
+                  fontSize: 12.sp,fontWeight: FontWeight.w400,decoration: TextDecoration.underline,decorationColor: Color(0xff018CCB),
                   color : Color(0xff018CCB)
                 ),),
               ),
-              SizedBox(height: 30,),
+              SizedBox(height: 30.h,),
               
               // container for login button
-              Container(
-                width: double.infinity,
-                height: 52,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  gradient: LinearGradient(colors: [
-                    Color(0xff3B82F6),
-                    Color(0xff06B6D4),
-                  ],
-                  begin: Alignment.centerLeft,
-                    end: Alignment.centerRight
-                  )
-                ),
-                child: Center(
-                  child: Text('Login',style: GoogleFonts.poppins(
-                    fontSize: 14,fontWeight: FontWeight.w500,color: Colors.white
-                  ),),
-                ),
-                ),
-              SizedBox(height: 30,),
+              GestureDetector(
+                onTap: (){
+                  setState(() {
+                    isLoading = true;
+                  });
+                  Future.delayed(Duration(seconds: 3), (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(
+                        builder: (context) => HomePage()));
+                  }
+                  );
+
+                },
+                child: Container(
+                  width: double.infinity,
+                  height: 52,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    gradient: LinearGradient(colors: [
+                      Color(0xff3B82F6),
+                      Color(0xff06B6D4),
+                    ],
+                    begin: Alignment.centerLeft,
+                      end: Alignment.centerRight
+                    )
+                  ),
+                  child: Center(
+                    child: isLoading ?
+                    Center(child: SpinKitChasingDots(
+                      size: 30,
+                      color: Colors.white,)) :
+                    Text('Login',style: GoogleFonts.poppins(
+                      fontSize: 14,fontWeight: FontWeight.w500,color: Colors.white
+                    ),),
+                  ),
+                  ),
+              ),
+              SizedBox(height: 30.h,),
 
               // text for sign up
               Center(
-                child: RichText(text: TextSpan(
-                  children: [
-                    TextSpan(text: 'Don’t have an account?',style: GoogleFonts.poppins(
-                      fontSize: 14,fontWeight: FontWeight.w500,color: Color(0xff6F747F),
-                      letterSpacing: -0.2
-                    ),),
-                    TextSpan(text: ' Sign Up.',style: GoogleFonts.poppins(
-                      color: Color(0xff4CC0F8),fontSize: 14,fontWeight: FontWeight.w500
-                    ))
-                  ]
-                )),
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(
+                        builder: (context) => CreateAccountScreen()));
+                  },
+                  child: RichText(text: TextSpan(
+                    children: [
+                      TextSpan(text: 'Don’t have an account?',style: GoogleFonts.poppins(
+                        fontSize: 14.sp,fontWeight: FontWeight.w500,color: Color(0xff6F747F),
+                        letterSpacing: -0.2
+                      ),),
+                      TextSpan(text: ' Sign Up.',style: GoogleFonts.poppins(
+                        color: Color(0xff4CC0F8),fontSize: 14,fontWeight: FontWeight.w500
+                      ))
+                    ]
+                  )),
+                ),
               ),
-              SizedBox(height: 30,),
+              SizedBox(height: 30.h,),
 
               // divider or divider
 
@@ -170,7 +198,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Expanded(child: Divider(indent: 9,)),
                 ],
               ),
-              SizedBox(height: 29,),
+              SizedBox(height: 29.h,),
 
               // icons of social media
 

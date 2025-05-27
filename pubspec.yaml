@@ -39,6 +39,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   pie_chart: ^5.4.0
   percent_indicator: ^4.2.5
+  flutter_spinkit: ^5.2.1
 
 dev_dependencies:
   flutter_test:

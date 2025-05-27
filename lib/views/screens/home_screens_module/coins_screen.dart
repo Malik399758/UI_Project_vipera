@@ -21,6 +21,7 @@ class _CoinsScreenState extends State<CoinsScreen> {
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
+            indicatorColor: Color(0xff06B6D4) ,
             labelColor: Color(0xff06B6D4),
             labelStyle: GoogleFonts.poppins(
               fontSize: 12.sp,fontWeight: FontWeight.w400,
