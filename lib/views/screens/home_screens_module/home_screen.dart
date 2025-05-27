@@ -209,7 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontSize: 10,fontWeight: FontWeight.w400,
                           color: Color(0xff9FA2AA)
                       ),),
-                      SizedBox(width: 75.w,),
+                      SizedBox(width: 70.w,),
                       Row(
                         children: [
                           Text('Profit',style: GoogleFonts.poppins(

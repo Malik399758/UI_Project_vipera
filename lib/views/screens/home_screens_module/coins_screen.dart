@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ui_project/views/screens/coins_tabbar_screens/favorites_coins_screen.dart';
 import 'package:ui_project/views/screens/coins_tabbar_screens/market_cap_screen.dart';
 import 'package:ui_project/views/screens/coins_tabbar_screens/pow_coins_screen.dart';
 
@@ -45,7 +46,7 @@ class _CoinsScreenState extends State<CoinsScreen> {
           ),
         ),
         body: TabBarView(children: [
-          Center(child: Text('1')),
+          FavoritesCoinsScreen(),
           MarketCapScreen(),
           PowCoinsScreen()
         ]),

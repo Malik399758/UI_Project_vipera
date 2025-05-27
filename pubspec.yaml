@@ -37,6 +37,8 @@ dependencies:
   google_fonts: ^6.2.1
   font_awesome_flutter: ^10.8.0
   flutter_screenutil: ^5.9.3
+  pie_chart: ^5.4.0
+  percent_indicator: ^4.2.5
 
 dev_dependencies:
   flutter_test:
